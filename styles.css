@@ -1,0 +1,37 @@
+
+
+h1 {font-family:Arial;
+font-size:24pt;
+  text-align: center;
+   background-color: #ADD8E6;
+color:#FF370C}
+
+h2 {font-family:Helvetica;
+font-size:16pt;
+text-align: center;
+ background-color: #ADD8E6;
+color:lightBlue}
+
+div {background-color:#ADD8E6
+
+p {font-family:Helvetica;
+font-size:18px;
+ background-color: #ADD8E6;
+color:black}
+
+ul {font-family:Helvetica;
+font-size:22px;
+ background-color: #ADD8E6;
+color:lightBlue}
+
+ol {font-family:Helvetica;
+font-size:22px;
+ background-color: #ADD8E6;
+color:black}
+
+.soundtext {font-family:Helvetica;
+font-size:12px;
+color:lightBlue}
+
+
+

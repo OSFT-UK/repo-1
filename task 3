@@ -1,0 +1,8 @@
+# Program 3 - Investigate and Modify
+name = []
+firstname = input("Enter your first name:")
+middlename = input("Enter your middle name:")
+surname = input("Enter your surname:")
+fullname = firstname + middlename + surname
+name.append(fullname)
+print(name)

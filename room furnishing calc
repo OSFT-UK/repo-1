@@ -1,0 +1,20 @@
+# calculate area
+l= int(input("enter length in m2: "))
+b= int(input("enter breadth in m2: "))
+h= int(input("enter height in m2: "))
+room_floor_area = l * b 
+room_wall_area = (l * h * 2) + (b * h * 2)
+print("The floor area is: ", room_floor_area, "m2")
+print("The room wall area is:", room_wall_area, "m2")
+
+carpet_tile = (2 * 1)
+carpet_tiles_required = (room_floor_area / carpet_tile)
+print(carpet_tiles_required, " carpet tiles required.")
+
+wallpaper_roll = 5
+wallpaper_roll_required = room_floor_area / wallpaper_roll
+print(wallpaper_roll_required," wallpaper rolls are required")
+
+ceiling_tile = 2 
+ceiling_tiles_required = room_floor_area / ceiling_tile
+print(ceiling_tiles_required, " ceiling tiles are required")

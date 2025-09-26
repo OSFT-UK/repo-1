@@ -1,0 +1,14 @@
+names = []
+marks = []
+
+for pupil in range(5):
+    name = input("Enter your name: ")
+    score = int(input("Enter your test score out of 100: "))
+
+    # Store values in arrays
+    names.append(name)
+    marks.append(score)
+
+# Print arrays
+print("Names entered:", names)
+print("scores entered:", marks)

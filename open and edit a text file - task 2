@@ -1,0 +1,20 @@
+#-------------Main Program-----------------
+#open file
+"""import time
+with open("c:/Users/a.sharma/Desktop/1101 task1/sampleFile.txt") as readfile:
+    #filecontents = readfile.read()
+    nextLine = readfile.readline()
+    while nextLine != "":
+        print(nextLine.strip())
+        time.sleep(2)
+        nextLine = readfile.readline()"""
+  
+import time
+#open file
+with open("c:/Users/a.sharma/Desktop/1101 task1/sampleFile.txt","w") as writefile:
+    writefile.write("Full name - Adwait Sharma")
+    writefile.write("favourite colour - Red")
+    writefile.write("birth month - January")
+    time.sleep(1)
+
+

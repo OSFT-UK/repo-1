@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Reviews</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
+    <style>
+        /* Hide all sections by default */
+        section {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    </style>
+    <script>
+        function showReview(id) {
+            // 1. Get all sections
+            var sections = document.getElementsByTagName("section");
+            
+            // 2. Hide all sections first (ensures only one shows at a time)
+            for (var i = 0; i < sections.length; i++) {
+                sections[i].style.display = "none";
+            }
+            
+            // 3. Show the specific section clicked
+            document.getElementById(id).style.display = "block";
+        }
+    </script>
+</head>
+
+<body background="../Images/bg.jpg">
+
+    <header>
+        Planet Games
+    </header>
+
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="todaysNews.html">News</a></li>
+                <li><a href="submitReview.html">Submit Review</a></li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+
+    <main style="text-align:center;">
+        <h1>Click on an image to reveal the review</h1>
+        
+        <img src="../Images/Gold Hunt.jpg" height="200px" width="220px" onclick="showReview('gold')"/>
+        <img src="../Images/Jungle J.jpg" height="200px" width="220px" onclick="showReview('jungle')"/>
+        <img src="../Images/Space Guy.jpg" height="200px" width="220px" onclick="showReview('space')"/>
+        <img src="../Images/Princess Power.jpg" height="200px" width="220px" onclick="showReview('princess')"/>
+
+        <section id="gold">
+            <h3> Gold Hunt </h3>
+            <p>Gold hunt is a free to play adventure game... 8/10.</p>
+        </section>
+
+        <section id="jungle">
+            <h3> Jungle Jamboree </h3>
+            <p>Are you an animal lover... 10/10.</p>
+        </section>
+
+        <section id="space">
+            <h3> Space Guy </h3>
+            <p>The hype for this game before release... 0/10</p>
+        </section>
+
+        <section id="princess">
+            <h3> Princess Power </h3>
+            <p>Tired of the tired trope... 9/10</p>
+        </section>
+    </main>
+
+    <footer>
+        <p> Planet Games Inc. 2022 </p>
+    </footer>
+</body>
+</html>

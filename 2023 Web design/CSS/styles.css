@@ -1,0 +1,81 @@
+/* --- Keep your existing styles above this line --- */
+
+/* Remove browser defaults */
+* {margin:0;padding:0}
+nav{background-color: white;}
+body {background-color: #d3d7da;font-family: Verdana; width:900px; margin:auto;}
+main {background-color: white; clear:both; margin-top:30px; padding: 20px;} /* Added padding for the form container */
+
+header{
+  background-color: crimson;
+  font-size: 50px;
+  color: white;
+  padding: 10px;
+}
+
+/* Navigation Styles */
+nav ul {list-style-type: none; font-size: 20px;}
+nav ul li {float:left; width:200px; text-align: center;}
+nav ul li a {display: block; padding:10px; color: crimson; text-decoration: none;}
+nav ul li a:hover{background-color: crimson; color:white;}
+
+/* --- NEW FORM STYLES --- */
+
+form {
+    padding: 20px;
+    border: 1px solid black; /* Matches the outer box in your design */
+    margin: 20px 0;
+    line-height: 1.6;
+}
+
+.form-row {
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px; /* Provides spacing between side-by-side inputs */
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Styling for Text and Number Inputs */
+input[type="text"], 
+input[type="number"], 
+textarea {
+    border: 1px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+/* Specific widths based on the design */
+#fname, #sname { width: 350px; }
+#genre { width: 350px; }
+#rating { width: 100px; }
+
+/* Radio Button group styling */
+.radio-container {
+    border: 1px solid black;
+    padding: 10px;
+    width: 300px;
+    margin-top: 5px;
+}
+
+/* Submit Button styling to match the design's rectangle */
+input[type="submit"] {
+    display: block;
+    width: 315px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    font-family: Verdana;
+}
+
+input[type="submit"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+footer{clear:both; margin-top: 10px; background-color:white; color: crimson; padding:10px; text-align: center;}

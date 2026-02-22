@@ -1,0 +1,38 @@
+<form action="#" method="post">
+    <div class="form-row">
+        <div class="form-group">
+            <label for="fname">First Name*</label><br>
+            <input type="text" id="fname" name="fname" maxlength="15" required>
+        </div>
+        <div class="form-group">
+            <label for="sname">Surname*</label><br>
+            <input type="text" id="sname" name="sname" maxlength="15" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>Age*</label><br>
+        <input type="radio" id="age1" name="age" value="16-18" required> <label for="age1">16-18</label>
+        <input type="radio" id="age2" name="age" value="19-24"> <label for="age2">19-24</label>
+        <input type="radio" id="age3" name="age" value="25-29"> <label for="age3">25-29</label>
+        <input type="radio" id="age4" name="age" value="30+"> <label for="age4">30+</label>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <label for="genre">Genre Name*</label><br>
+            <input type="text" id="genre" name="genre" maxlength="20" required>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating*</label><br>
+            <input type="number" id="rating" name="rating" min="1" max="10" required>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="review">Your detailed review*</label><br>
+        <textarea id="review" name="review" rows="4" cols="50" required></textarea>
+    </div>
+
+    <input type="submit" value="Submit">
+</form>
